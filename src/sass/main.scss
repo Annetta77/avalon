@@ -1,0 +1,25 @@
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
+@use 'utils/fonts' as *;
+@use 'utils/base' as *;
+@use 'utils/reset' as *;
+
+
+
+
+@use 'blocks/page';
+@use 'blocks/header';
+@use 'blocks/contacts';
+@use 'blocks/navigation';
+@use 'blocks/main';
+@use 'blocks/main-header';
+@use 'blocks/main-header-form';
+@use 'blocks/description';
+@use 'blocks/advantages';
+@use 'blocks/strengths';
+@use 'blocks/request';
+@use 'blocks/request-form';
+@use 'blocks/delivery';
+@use 'blocks/delivery-price';
+@use 'blocks/social';
+@use 'blocks/footer';

@@ -1,0 +1,25 @@
+.navigation {
+  width: 100%;
+  height: auto;
+  display: none;
+
+  &__active {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    padding-bottom: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: none;
+    column-gap: 80px;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    width: 10%;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+  opacity: 0.9;
+  justify-content: start;
+  gap: 30px;
+  margin-left: 40px;
+  font-weight: 500;
+      font-size: 1em;
+
+  &__item:nth-child(2) .contacts__link {
+    font-size: 1.2em;
+    text-transform: lowercase;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-link svg {
+    border-radius: 15px;
+  }
+
+  &__link {
+    margin-left: 15px;
+  }
+}

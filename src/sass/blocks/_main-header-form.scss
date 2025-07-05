@@ -1,0 +1,56 @@
+.main-header-form {
+  position: absolute;
+  font-size: 16px;
+  max-width: 600px;
+  left: 700px;
+  top: 575px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    'label-name label-phone button'
+    'input-name input-phone button '
+    'text text text';
+  grid-auto-flow: row;
+
+  .label-name {
+    grid-area: label-name;
+  }
+  .input-name {
+    grid-area: input-name;
+  }
+  .label-phone {
+    grid-area: label-phone;
+  }
+  .input-phone {
+    grid-area: input-phone;
+  }
+  .main-header-form__btn {
+    grid-area: button;
+    width: 170px;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #f6d700;
+    border-radius: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    font-weight: 500;
+  }
+  .main-header-form__text {
+    grid-area: text;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 177px;
+    height: 50px;
+    background-color: #fff;
+    color: rgb(51, 51, 51);
+    padding-left: 20px;
+    border-radius: 15px;
+  }
+}
