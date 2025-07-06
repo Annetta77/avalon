@@ -13,6 +13,7 @@
     'input-name input-phone button '
     'text text text';
   grid-auto-flow: row;
+  z-index: 1099;
 
   .label-name {
     grid-area: label-name;
