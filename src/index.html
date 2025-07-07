@@ -458,27 +458,27 @@
         <a href="#" class="strengths__link-btn">Заказать звонок</a>
       </section>
       <section class="main__request request">
-        <form action="#" method="post" class="request__request-form request-form">
-          <p class="request-form__text">[ доставка грузов под ключ ]</p>
-          <h2 class="request-form__title">Оставьте заявку</h2>
-          <p class="request-form__text">Заполните форму, и наш менеджер Вас проконсультирует</p>
-          <label for="name_2">Имя</label>
-          <input type="text" name="name" placeholder="Иван" id="name_2" required />
-          <label for="phone_2">Телефон</label>
-          <input
-            class="phone"
-            type="tel"
-            name="phone"
-            placeholder=" 999 999-99-99"
-            id="phone_2"
-            maxlength="21"
-            required />
-          <button type="submit">Заказать звонок</button>
-          <p>
-            Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия политики
-            конфиденциальности.
-          </p>
-        </form>
+        <div class="form-cont">
+          <form action="#" method="post" class="request__request-form request-form">
+            <p class="request-form__text"><span>[</span> доставка грузов под ключ <span>]</span></p>
+            <h2 class="request-form__title">Оставьте заявку</h2>
+            <p class="request-form__text">Заполните форму, и наш менеджер Вас проконсультирует</p>
+            <input type="text" name="name" placeholder="Имя" id="name_2" style="text-transform: uppercase;" required />
+            <input
+              class="phone"
+              type="tel"
+              name="phone"
+              placeholder=" 999 999-99-99"
+              id="phone_2"
+              maxlength="21"
+              required />
+            <button type="submit">Заказать звонок</button>
+            <p class="request-form__text">
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия политики
+              конфиденциальности.
+            </p>
+          </form>
+        </div>
       </section>
       <section class="main__delivery delivery">
         <p class="delivery__text">[ Виды доставки из Китая в Россию ]</p>

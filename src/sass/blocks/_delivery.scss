@@ -1,0 +1,38 @@
+.delivery {
+  color: #26262b;
+  font-size: 19px;
+  font-family: 'Gilroy', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  position: relative;
+  height: 796px;
+  width: 1050px;
+  margin: 0 auto;
+
+  &__title {
+    position: absolute;
+    top: 60px;
+    left: 294px;
+    width: 579px;
+    height: auto;
+    color: #26262b;
+    font-size: 70px;
+    font-family: 'Gilroy', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  &__text:nth-of-type(1) {
+    position: absolute;
+    top: 60px;
+    left: 194px;
+    width: 383px;
+    height: auto;
+  }
+}

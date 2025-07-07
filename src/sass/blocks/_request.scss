@@ -1,0 +1,49 @@
+.request {
+  background-color: rgb(71, 71, 235);
+  background: url('../images/image.png.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-style: solid;
+  min-height: 595px;
+  height: 650px;
+  position: relative;
+
+  & .form-cont {
+    width: 1505px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__request-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    top: 65px;
+    right: 150px;
+    height: 520px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 30px 80px 0px rgba(219, 236, 245, 0.2);
+    padding-top: 45px;
+    padding-left: 55px;
+    color: #26262b;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+
+    
+  }
+
+
+}

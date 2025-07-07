@@ -1,0 +1,62 @@
+.request-form {
+  &__title {
+    font-size: 60px;
+    letter-spacing: -3px;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  &__text:nth-of-type(1) {
+    margin-bottom: -15px;
+  }
+
+  &__text:nth-of-type(2) {
+    letter-spacing: -0.6px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__text:nth-of-type(3) {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.2;
+    width: 470px;
+  }
+
+  & input {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(38, 38, 43);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    height: 50px;
+    width: 500px;
+    padding: 0 25px;
+    margin-bottom: 20px;
+  }
+
+  & button {
+    box-sizing: border-box;
+    padding: 0px 15px;
+    display: block;
+    width: 190px;
+    font-weight: 300;
+    height: 50px;
+    color: #26262b;
+    border: 1px solid #f6d700;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Gilroy, Arial, sans-serif;
+    cursor: pointer;
+    background-color: #f6d700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}
