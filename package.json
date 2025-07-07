@@ -8,8 +8,7 @@
     "start": "gulp",
     "build": "gulp build",
     "images": "gulp images",
-      "deploy": "gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
