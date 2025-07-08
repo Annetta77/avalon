@@ -7,6 +7,7 @@ input.forEach((inp) =>
     preferredCountries: ['ru', 'us', 'gb'],
     separateDialCode: true,
     initialCountry: 'ru',
+
   })
 );
 
