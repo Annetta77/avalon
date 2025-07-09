@@ -6,6 +6,7 @@
   background-attachment: scroll;
   height: 100vh;
   min-height: 550px;
+  max-height: 980px;
   color: #ffffff;
   z-index: 0;
   position: relative;
@@ -26,7 +27,8 @@
 
   &__title-cont {
     position: absolute;
-    top: 255px;
+    top: calc(43vh - 29px + -39px);
+
     left: 155px;
     width: 681px;
     height: auto;
@@ -36,6 +38,9 @@
     line-height: 58px;
     z-index: 8;
     letter-spacing: -3px;
+
+    
+    
   }
 
   &__title {
@@ -43,16 +48,24 @@
     z-index: 8;
     font-weight: 500;
     font-size: 58px;
+    @media (max-width: 1366px) {
+      font-size: 54px;
+      letter-spacing: -5px;
+    }
   }
 
   &__title-text {
     font-size: 1.6em;
-        letter-spacing: -3px;
-font-weight: 300;
+    letter-spacing: -3px;
+    font-weight: 300;
+    @media (max-width: 1366px) {
+      font-size: 1.5em;
+    }
   }
 
   &__text {
     z-index: 8;
+    font-size: 0.9em;
   }
   &__text:nth-child(1) {
     line-height: 38px;
@@ -70,7 +83,7 @@ font-weight: 300;
   &__text:nth-child(4) {
     line-height: 32px;
     position: absolute;
-    top: 475px;
+    bottom: 190px;
     left: 143px;
     width: 441px;
     height: auto;
@@ -82,12 +95,15 @@ font-weight: 300;
     padding-left: 20px;
     padding-bottom: 15px;
     margin-left: -20px;
+
+    @media (max-width: 1366px){
+      width: 400px;
+      }
   }
 
   &__list {
-    position: absolute;
-    top: 260px;
-    left: 959px;
+    top: calc(50vh - 24px + -104px);
+    justify-content: start;
     width: 400px;
     height: auto;
     font-size: 1.5em;
@@ -96,9 +112,15 @@ font-weight: 300;
     border-left: 3px solid #f6d700;
     padding-left: 40px;
     padding-bottom: 15px;
-    margin-left: -40px;
     z-index: 8;
     line-height: 1.6;
+    position: absolute;
+    left: 50%;
+
+    @media (max-width: 1366px) {
+  transform: translateX(100px); /* Настройте нужное значение */
+      // left: 700px; 
+      }
   }
 
   &__item {
@@ -111,11 +133,26 @@ font-weight: 300;
 
   .grid-left {
     flex-shrink: 0;
+    
+    @media (max-width: 1366px) {
+      left: 10%;
+    }
   }
 
   .grid-right {
     margin-left: auto;
     padding-right: 110px;
     right: 20px;
+    width: 40%;
+    @media (max-width: 2000px) {
+      width: 50%;
+      margin-left: 10%;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    width: 100%;
+    // max-width: 1366px;
+    max-height: 980px;
   }
 }

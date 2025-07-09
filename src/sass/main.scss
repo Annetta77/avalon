@@ -4,9 +4,6 @@
 @use 'utils/base' as *;
 @use 'utils/reset' as *;
 
-
-
-
 @use 'blocks/page';
 @use 'blocks/header';
 @use 'blocks/contacts';
@@ -23,3 +20,4 @@
 @use 'blocks/delivery-price';
 @use 'blocks/social';
 @use 'blocks/footer';
+@use 'blocks/modal';

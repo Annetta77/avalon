@@ -31,6 +31,9 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   backface-visibility: hidden;
+
+  z-index: 100; /* Поднимаем выше других элементов */
+  overflow: visible; 
   &__logo-cont {
     display: flex;
     margin-left: 10px;
@@ -46,28 +49,33 @@
     margin-bottom: auto;
     margin-left: 30px;
     color: #26262b;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'Gilroy', Arial, sans-serif;
     line-height: 1.55;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 15px;
     background-color: #f6d700;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
     max-height: 35px;
+    width: 180px;
+    height: 40px;
   }
 
   &__burger-btn {
     margin-left: 40px;
-
   }
 
-
+  @media (max-width: 1366px) {
+    width: 1014px;
+    margin: 0 auto;
+    font-size: 0.8em;
+    
+ }
 }
 
-@media screen and (max-width: 1420px) {
-  .header {
-    font-size: 1em;
-  }
-}
+// @media screen and (max-width: 1420px) {
+//   .header {
+//     font-size: 1em;
+//   }

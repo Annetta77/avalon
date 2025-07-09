@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  gap: 15px;
+
+  &__whatsapp {
+    background-color: #27d061;
+      width: 172px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+        border-radius: 6px;
+
+  }
+
+  &__telegram {
+    width: 172px;
+    height: 48px;
+    background-color: #1d98dc;
+     display: flex;
+    justify-content: center;
+    border-radius: 6px;
+  }
+}

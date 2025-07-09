@@ -2,8 +2,8 @@
   position: absolute;
   font-size: 16px;
   max-width: 600px;
-  left: 700px;
-  top: 575px;
+  left: 600px;
+  bottom: 70px;
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -38,6 +38,11 @@
     text-transform: uppercase;
     margin-top: 18px;
     font-weight: 500;
+
+    @media (max-width: 1366px) {
+      width: 150px;
+      height: 45px;
+    }
   }
   .main-header-form__text {
     grid-area: text;
@@ -53,5 +58,26 @@
     color: rgb(51, 51, 51);
     padding-left: 20px;
     border-radius: 15px;
+
+    @media (max-width: 1366px) {
+      width: 157px;
+      height: 45px;
+    }
+  }
+  .iti__flag-container {
+    color: rgb(51, 51, 51);
+    background-color: inherit;
+  }
+
+  .input-wrapper {
+    width: 177px;
+  }
+
+  @media (max-width: 1366px) {
+    max-width: 504px;
+    bottom: 30px;
+    left: 480px;
+    column-gap: 10px;
+    bottom: 50px;
   }
 }

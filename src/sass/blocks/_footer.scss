@@ -1,0 +1,160 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+
+  &__cont {
+    background: url('../images/carnets-profesionale.jpg.webp');
+    height: 550px;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    text-align: center;
+    -moz-transform: unset;
+    vertical-align: middle;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding-top: 87px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+      z-index: 0;
+    }
+  }
+  &__title {
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 500;
+    grid-area: title;
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    z-index: 1;
+    width: 670px;
+    height: 345px;
+    padding: 60px 45px 70px 45px;
+    background-color: #ffe100;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'title title title'
+      'label-name label-phone button'
+      'input-name input-phone button '
+      'text text text';
+    z-index: 1099;
+    font-weight: 300;
+
+    .label-name--foot {
+      grid-area: label-name;
+      justify-self: first baseline;
+      align-self: self-end;
+      margin-bottom: 8px;
+    }
+    .input-name--foot {
+      width: 189px;
+      grid-area: input-name;
+      margin-right: 15px;
+    }
+    .label-phone--foot {
+      grid-area: label-phone;
+      justify-self: first baseline;
+      align-self: self-end;
+      margin-bottom: 8px;
+    }
+    .input-phone--foot {
+      width: 217px;
+      grid-area: input-phone;
+      justify-self: start;
+    }
+    & button {
+      grid-area: button;
+      width: 223px;
+      height: 56px;
+      padding: 0 15px;
+      background-color: #000000;
+      color: #fff;
+      border-radius: 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-top: 45px;
+      font-weight: 500;
+      box-sizing: border-box;
+      margin-left: 15px;
+    }
+    p {
+      grid-area: text;
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    input {
+      box-sizing: border-box;
+      width: 189px;
+      height: 55px;
+      color: rgb(51, 51, 51);
+      padding-left: 20px;
+      border-radius: 15px;
+      border: 1px solid #000000;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+
+  }
+
+  &__created {
+    font-size: 14px;
+    color: #000000;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 36px;
+    opacity: 0.7;
+  }
+
+  &__created-link {
+    color: #ff8562;
+  }
+
+  .input-wrapper {
+    width: 189px;
+  }
+
+  .iti__flag-container {
+    font-size: 16px;
+    background-color: inherit;
+  }
+
+  .error-message {
+  display: block;
+  color: white;
+  width: 670px;
+  height: 71px;
+  background: #f95d51;
+  padding: 0.5rem;
+  border-radius: 0 0 4px 4px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+}
