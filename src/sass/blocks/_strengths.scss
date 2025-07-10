@@ -1,7 +1,7 @@
 .strengths {
   padding-top: 95px;
   position: relative;
-  width: 1200px;
+  // width: 1200px;
   margin: 0 auto;
   padding-right: 260px;
   height: 1410px;
@@ -17,6 +17,11 @@
     line-height: 1;
     font-weight: 300;
     z-index: 10;
+
+    @media (max-width: 1024px) {
+      font-size: 47px;
+      left: 35px;
+    }
   }
 
   &__item-title {
@@ -68,6 +73,7 @@
         z-index: 10;
         animation: border-flow 3s ease-in-out infinite;
         transform-origin: center;
+
         opacity: 1 !important;
       }
 
@@ -76,6 +82,7 @@
         left: 935px;
         width: 365px;
         z-index: 4;
+
 
         &::before {
           top: -150px;
@@ -119,6 +126,7 @@
         left: 610px;
         width: 353px;
         z-index: 2;
+         
 
         &::before {
           top: -150px;
@@ -156,6 +164,12 @@
         }
       }
     }
+    @media (max-width: 1024px) {
+      position: relative;
+      left: -150px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__link-btn {
@@ -181,7 +195,16 @@
     }
   }
   @media (max-width: 1366px) {
-    // padding-bottom: 100px;
+    display: flex;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  @media (max-width: 1024px) {
+    // position: relative;
+    width: 100%;
+    transform: scale(0.7);
+    left: -100px;
   }
 }
 

@@ -12,6 +12,8 @@
   position: relative;
   width: 100%;
   display: flex;
+  // max-width: 100vw;
+  overflow: hidden;
 
   &::after {
     content: '';
@@ -39,8 +41,14 @@
     z-index: 8;
     letter-spacing: -3px;
 
-    
-    
+    @media (max-width: 1366px) {
+      top: calc(50vh - 29px + -39px);
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.4em;
+      top: calc(55vh - 29px + -39px);
+    }
   }
 
   &__title {
@@ -52,6 +60,12 @@
       font-size: 54px;
       letter-spacing: -5px;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 1.4em;
+      margin-bottom: -20px;
+      letter-spacing: 1px;
+    }
   }
 
   &__title-text {
@@ -60,9 +74,13 @@
     font-weight: 300;
     @media (max-width: 1366px) {
       font-size: 1.5em;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 1024px) {
+      letter-spacing: normal;
     }
   }
-
   &__text {
     z-index: 8;
     font-size: 0.9em;
@@ -96,9 +114,16 @@
     padding-bottom: 15px;
     margin-left: -20px;
 
-    @media (max-width: 1366px){
+    @media (max-width: 1366px) {
       width: 400px;
-      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 580px;
+      bottom: 330px;
+      font-size: 1.2em;
+      left: 500px;
+    }
   }
 
   &__list {
@@ -118,9 +143,14 @@
     left: 50%;
 
     @media (max-width: 1366px) {
-  transform: translateX(100px); /* Настройте нужное значение */
-      // left: 700px; 
-      }
+      // transform: translateX(100px); /* Настройте нужное значение */
+      left: 800px;
+    }
+
+    @media (max-width: 1024px) {
+      top: calc(100vh - 24px + -104px);
+      left: 650px;
+    }
   }
 
   &__item {
@@ -133,8 +163,12 @@
 
   .grid-left {
     flex-shrink: 0;
-    
+
     @media (max-width: 1366px) {
+      left: 10%;
+    }
+
+    @media (max-width: 1024px) {
       left: 10%;
     }
   }
@@ -145,14 +179,27 @@
     right: 20px;
     width: 40%;
     @media (max-width: 2000px) {
-      width: 50%;
-      margin-left: 10%;
+      // width: 50%;
+      margin-left: 7%;
+      padding-right: 0;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: -200px;
     }
   }
 
   @media (max-width: 1366px) {
-    width: 100%;
-    // max-width: 1366px;
     max-height: 980px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 913px;
   }
 }

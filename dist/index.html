@@ -114,9 +114,9 @@
         <p class="main-header__text  grid-left">
           Узнайте лучшие цены на доставку из Китая по четырем направлениям: авиа, авто, жд и морскому транспорту.
         </p>
-        <form action="#" method="post" class="main-header__form main-header-form  grid-right">
+        <form action="#" method="post" class="main-header__form main-header-form  grid-right form-error-fixed">
           <label for="name_1" class="label-name">Имя</label>
-          <input type="text" name="name" placeholder="Иван" id="name_1" class="input-name" required />
+          <input type="text" name="name" placeholder="Иван" id="name_1" class="input-name" />
           <label for="phone_1" class="label-phone ">Телефон</label>
           <div class="input-wrapper">
             <input
@@ -420,9 +420,9 @@
         </ul>
         <ul class="advantages__steps-list">
           <li class="advantages__steps-item"><p>Подбираем поставщика</p></li>
-          <li class="advantages__steps-item">Получаем документы на оплату</li>
-          <li class="advantages__steps-item">Оплачиваем ваш товар</li>
-          <li class="advantages__steps-item">Контролируем отгрузку</li>
+          <li class="advantages__steps-item"><p>Получаем документы на оплату</p></li>
+          <li class="advantages__steps-item"><p>Оплачиваем ваш товар</p></li>
+          <li class="advantages__steps-item"><p>Контролируем отгрузку</p></li>
         </ul>
       </section>
       <section class="main__strengths strengths">
@@ -461,11 +461,11 @@
       </section>
       <section class="main__request request">
         <div class="form-cont">
-          <form action="#" method="post" class="request__request-form request-form">
+          <form action="#" method="post" class="request__request-form request-form form-error-fixed">
             <p class="request-form__text"><span>[</span> доставка грузов под ключ <span>]</span></p>
             <h2 class="request-form__title">Оставьте заявку</h2>
             <p class="request-form__text">Заполните форму, и наш менеджер Вас проконсультирует</p>
-            <input type="text" name="name" placeholder="Имя" id="name_2" style="text-transform: uppercase;" required />
+            <input type="text" name="name" placeholder="Имя" id="name_2" style="text-transform: uppercase;" />
             <div class="input-wrapper">
               <input
                 class="phone"
@@ -603,7 +603,7 @@
           <h2 class="footer__title">Остались вопросы? Оставьте заявку!</h2>
 
           <label for="name_3" class="label-name--foot">Имя</label>
-          <input type="text" name="name" class="input-name--foot" placeholder="Иван" id="name_3" required />
+          <input type="text" name="name" class="input-name--foot" placeholder="Иван" id="name_3" />
           <label for="phone_3" class="label-phone--foot">Телефон</label>
           <div class="input-wrapper">
             <input
@@ -616,6 +616,9 @@
               required />
           </div>
           <button type="submit">Заказать звонок</button>
+
+          <div class="error-message error-footer">Пожалуйста, заполните все обязательные поля</div>
+
           <p>
             Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия политики
             конфиденциальности.
@@ -634,8 +637,8 @@
         <div class="modal__img"></div>
         <h2 class="modal__title">Закажите обратный звонок</h2>
         <p class="modal__text">Заполните форму, и наш менеджер вас проконсультирует</p>
-        <div class="modal__form">
-          <input type="text" name="name" placeholder="Имя" id="name_4" required />
+        <form class="modal__form">
+          <input type="text" name="name" placeholder="Имя" id="name_4" />
           <div class="input-wrapper">
             <input
               class="phone"
@@ -647,14 +650,16 @@
               required />
           </div>
           <button type="submit">Заказать звонок</button>
-          <div class="error-message">Пожалуйста, заполните все обязательные поля</div>
-        </div>
+          <div class="error-message error-modal">Пожалуйста, заполните все обязательные поля</div>
+        </form>
 
         <p class="modal__text">
           Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
         </p>
       </div>
     </div>
+    <div class="error-message error-fixed" style="display: none;">Пожалуйста, заполните все обязательные поля</div>
+
     <script src="js/main.js" defer></script>
   </body>
 </html>

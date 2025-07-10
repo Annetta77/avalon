@@ -34,11 +34,33 @@
 
       &:not(:nth-of-type(3)) {
         border-right: 1px solid #000000;
+        @media (max-width: 1024px) {
+          border: none;
+          border-bottom: 1px solid #000000;
+          padding-bottom: 50px;
+        }
       }
 
       & svg {
         margin-bottom: 30px;
+        @media (max-width: 1024px) {
+          transform: scale(1.1);
+        }
       }
+
+      @media (max-width: 1024px) {
+        width: 576px;
+        padding-bottom: 25px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      transform: scale(0.9);
+      flex-direction: column;
+      border: none;
+      margin: 0 auto;
+      gap: 30px;
+      margin-bottom: 70px;
     }
   }
 
@@ -46,6 +68,13 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    @media (max-width: 1024px) {
+      transform: scale(0.9);
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__steps-item {
@@ -60,5 +89,28 @@
     padding: 0 25px;
     padding-top: 17px;
     margin-right: 10px;
+
+    p {
+      @media (max-width: 1024px) {
+        width: 190px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 640px;
+      padding: 0 15px;
+      padding-top: 17px;
+      margin: 0 auto;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+    height: 1380px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
   }
 }

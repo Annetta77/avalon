@@ -11,6 +11,14 @@
   white-space: normal;
   word-break: normal;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Предотвращаем горизонтальный скролл */
+}
 
 ul {
   list-style: none;
@@ -95,13 +103,23 @@ span {
   color: #f6d700;
   font-weight: 300;
 }
-
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .pulse-container {
   position: relative;
   width: 100px;
   height: 100px;
   margin: 0 auto;
   transform-style: preserve-3d;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+    transform: scale(0.7);
+    top: 200px; /* Опционально: плавное уменьшение */
+  }
 }
 
 .pulse-ring {
@@ -143,6 +161,8 @@ span {
   height: 705px;
   animation: pulse-wave 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   animation-delay: 0.2s;
+
+ 
 }
 
 .pulse-ring:nth-child(4) {
@@ -179,6 +199,11 @@ span {
   opacity: 0.8;
   animation: pulse-img 3s ease-in-out infinite;
   transform-origin: center;
+  @media (max-width: 1024px) {
+    width: 123px;
+    height: 143px;
+    left: calc(60% - 600px + 499px);
+  }
 }
 
 @keyframes pulse-img {
@@ -279,24 +304,53 @@ html {
   }
 }
 
-.error-message {
+.error-fixed {
   display: block;
+  position: fixed;
+  width: 376px;
+  height: 63px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.error-message {
+  // display: block;
   color: white;
   width: 670px;
   height: 71px;
   background: #f95d51;
   padding: 0.5rem;
   border-radius: 0 0 4px 4px;
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
   margin-top: 10px;
 }
 
-/* Показываем ошибку только после попытки отправки */
-input:invalid + .error-message {
-  display: block;
+.error-fixed {
+  // display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
+  width: 376px;
+  height: 63px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input:invalid {
-        border: 1px solid red;
-      
+// input:invalid + .error-message {
+//   display: block;
+// }
+
+input.touched:invalid {
+  border-color: #ff4444 !important;
 }

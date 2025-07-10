@@ -76,8 +76,15 @@
   @media (max-width: 1366px) {
     max-width: 504px;
     bottom: 30px;
-    left: 480px;
+    // left: 480px;
     column-gap: 10px;
     bottom: 50px;
+    margin-left: 10%;
   }
+
+    @media (max-width: 1024px) {
+      bottom: 20px;
+      left: 400px;
+    }
+
 }

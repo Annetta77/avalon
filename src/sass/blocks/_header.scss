@@ -32,8 +32,8 @@
   transform: translateZ(0);
   backface-visibility: hidden;
 
-  z-index: 100; /* Поднимаем выше других элементов */
-  overflow: visible; 
+  z-index: 100;
+  overflow: visible;
   &__logo-cont {
     display: flex;
     margin-left: 10px;
@@ -43,7 +43,14 @@
     opacity: 0.9;
     font-size: 1.1em;
     font-weight: 500;
+
+     @media (max-width: 1024px) {
+    margin-right: 20px;
   }
+  }
+
+
+
   &__btn {
     margin-top: auto;
     margin-bottom: auto;
@@ -61,21 +68,30 @@
     max-height: 35px;
     width: 180px;
     height: 40px;
+
+    @media (max-width: 1024px) {
+      width: 170px;
+      margin-left: 20px;
+      font-size: 1.2em;
+    }
   }
 
   &__burger-btn {
     margin-left: 40px;
+
+    @media (max-width: 1024px) {
+      margin-left: 15px;
+    }
   }
 
   @media (max-width: 1366px) {
-    width: 1014px;
     margin: 0 auto;
-    font-size: 0.8em;
-    
- }
-}
+    font-size: 0.9em;
+    overflow: hidden;
+  }
 
-// @media screen and (max-width: 1420px) {
-//   .header {
-//     font-size: 1em;
-//   }
+  @media (max-width: 1024px) {
+    font-size: 0.8em;
+    width: 70%;
+  }
+}

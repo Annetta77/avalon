@@ -15,6 +15,9 @@
     text-transform: none;
     column-gap: 80px;
     justify-content: center;
+      @media (max-width: 1024px) {
+    font-size: 18px;
+  }
   }
 
   &__item {
@@ -22,4 +25,7 @@
     width: 10%;
     flex-wrap: wrap;
   }
+
+
+ 
 }
