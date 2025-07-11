@@ -26,8 +26,8 @@
     height: auto;
     letter-spacing: -0.9px;
     @media (max-width: 1024px) {
-      left: 180px;
-      bottom: 450px;
+      left: 150px;
+      bottom: 350px;
     }
   }
 
@@ -59,7 +59,7 @@
 
     @media (max-width: 1024px) {
       width: 400px;
-      top: 900px;
+      top: 1000px;
       left: calc(25% - 600px + 620px);
     }
   }
@@ -100,7 +100,7 @@
     @media (max-width: 1024px) {
       left: 150px;
       width: 620px;
-      bottom: 190px;
+      bottom: 90px;
     }
   }
 
@@ -120,10 +120,10 @@
     width: 560px;
     height: auto;
     @media (max-width: 1024px) {
-      left: 180px;
+      left: 150px;
       font-size: 38px;
       width: 450px;
-      bottom: 350px;
+      bottom: 250px;
     }
   }
 

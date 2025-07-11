@@ -11,7 +11,6 @@
   position: relative;
 
   & .form-cont {
-    width: 1505px;
     position: relative;
     margin: 0 auto;
   }
@@ -45,5 +44,9 @@
     
   }
 
+  @media (max-width: 1024px) {
+    width: 100%;
+
+  }
 
 }

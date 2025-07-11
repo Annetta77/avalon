@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
         border-radius: 6px;
+         @media (max-width: 1024px) {
+      width: 293px;
+    }
 
   }
 
@@ -19,5 +22,10 @@
      display: flex;
     justify-content: center;
     border-radius: 6px;
+     @media (max-width: 1024px) {
+      width: 293px;
+    }
   }
+
+  
 }

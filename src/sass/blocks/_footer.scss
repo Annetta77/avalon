@@ -51,6 +51,12 @@
     font-weight: 500;
     grid-area: title;
     margin-bottom: 75px;
+
+    @media (max-width: 1024px) {
+      width: 490px;
+      font-size: 40px;
+      margin-bottom: 45px;
+    }
   }
 
   &__form {
@@ -79,17 +85,27 @@
       justify-self: first baseline;
       align-self: self-end;
       margin-bottom: 8px;
+      @media (max-width: 1024px) {
+        align-self: start;
+      }
     }
     .input-name--foot {
       width: 189px;
       grid-area: input-name;
       margin-right: 15px;
+
+      @media (max-width: 1024px) {
+        width: 490px;
+      }
     }
     .label-phone--foot {
       grid-area: label-phone;
       justify-self: first baseline;
       align-self: self-end;
       margin-bottom: 8px;
+      @media (max-width: 1024px) {
+        align-self: start;
+      }
     }
     .input-phone--foot {
       width: 217px;
@@ -109,12 +125,20 @@
       font-weight: 500;
       box-sizing: border-box;
       margin-left: 15px;
+
+      @media (max-width: 1024px) {
+        width: 490px;
+        margin-left: 0;
+      }
     }
     p {
       grid-area: text;
       margin-top: 20px;
       font-size: 15px;
       line-height: 1.55;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
 
     input {
@@ -127,6 +151,20 @@
       border: 1px solid #000000;
       font-size: 16px;
       line-height: 1.55;
+
+      @media (max-width: 1024px) {
+        width: 490px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 580px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
     }
   }
 
@@ -147,6 +185,10 @@
 
   .input-wrapper {
     width: 189px;
+    @media (max-width: 1024px) {
+      width: 490px;
+      margin-bottom: 20px;
+    }
   }
 
   .iti__flag-container {

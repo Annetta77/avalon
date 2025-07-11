@@ -1,8 +1,6 @@
 .strengths {
   padding-top: 95px;
   position: relative;
-  // width: 1200px;
-  margin: 0 auto;
   padding-right: 260px;
   height: 1410px;
   margin-bottom: -90px;
@@ -19,8 +17,9 @@
     z-index: 10;
 
     @media (max-width: 1024px) {
-      font-size: 47px;
-      left: 35px;
+      font-size: 57px;
+      left: 60px;
+      top: -150px;
     }
   }
 
@@ -33,6 +32,9 @@
     margin-bottom: 20px;
     position: relative;
     z-index: 5;
+    @media (max-width: 1024px) {
+      font-size: 36px;
+    }
   }
 
   &__item-text {
@@ -44,6 +46,10 @@
     letter-spacing: -0.6px;
     position: relative;
     z-index: 5;
+    @media (max-width: 1024px) {
+      font-size: 22px;
+      letter-spacing: -1px;
+    }
   }
 
   &__list {
@@ -83,6 +89,10 @@
         width: 365px;
         z-index: 4;
 
+        @media (max-width: 1024px) {
+          top: 650px;
+          left: 750px;
+        }
 
         &::before {
           top: -150px;
@@ -105,6 +115,10 @@
         left: 175px;
         width: 322px;
         z-index: 3;
+        @media (max-width: 1024px) {
+          top: 250px;
+          left: 350px;
+        }
 
         &::before {
           top: -170px;
@@ -126,7 +140,11 @@
         left: 610px;
         width: 353px;
         z-index: 2;
-         
+
+        @media (max-width: 1024px) {
+          top: 900px;
+          left: 300px;
+        }
 
         &::before {
           top: -150px;
@@ -148,6 +166,11 @@
         left: 250px;
         width: 329px;
         z-index: 1;
+
+        @media (max-width: 1024px) {
+          top: 1200px;
+          left: 750px;
+        }
 
         &::before {
           top: -140px;
@@ -193,6 +216,14 @@
       background-color: #f6d700;
       color: #ffffff;
     }
+
+    @media (max-width: 1024px) {
+      // top: 1450px;
+      left: 250px;
+      top: 1650px;
+      height: 65px;
+      font-size: 30px;
+    }
   }
   @media (max-width: 1366px) {
     display: flex;
@@ -204,7 +235,9 @@
     // position: relative;
     width: 100%;
     transform: scale(0.7);
-    left: -100px;
+    left: -50px;
+    height: 1480px;
+    padding-top: 0;
   }
 }
 

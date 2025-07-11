@@ -26,6 +26,19 @@
     text-align: center;
     line-height: 1.23;
     margin-bottom: 100px;
+
+    .br-tablet {
+      display: none;
+
+      @media (max-width: 1024px) {
+        display: block;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 490px;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -37,14 +50,28 @@
     align-items: center;
     margin-left: 100px;
     margin-bottom: 75px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      margin-left: 0;
+            gap: 35px;
+
+    }
   }
 
   &__item {
     width: 45%;
     font-weight: 500;
     display: flex;
-gap: 20px;   
- align-items: center;
+    gap: 20px;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      width: auto;
+      font-size: 20px;
+    }
   }
 
   &__item:nth-of-type(3) {
