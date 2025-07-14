@@ -45,6 +45,14 @@
       left: 50px;
       width: 537px;
     }
+
+     @media (max-width: 640px) {
+      width: 431px;
+left: 25px;      
+padding-left: 20px;
+padding-top: 35px;
+height: 488px;
+    }
   }
 
   @media (max-width: 1024px) {

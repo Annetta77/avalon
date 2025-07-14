@@ -29,9 +29,18 @@
       left: 150px;
       bottom: 350px;
     }
-@media (max-width: 850px) {
-left: 50px;  }
+    @media (max-width: 850px) {
+      left: 50px;
+    }
+    @media (max-width: 720px) {
+      left: 10px;
+    }
 
+     @media (max-width: 640px) {
+      
+      font-size: 24px;
+      bottom: 400px;
+    }
   }
 
   &__link-btn {
@@ -69,7 +78,15 @@ left: 50px;  }
       top: 950px;
       left: calc(23% - 600px + 620px);
       width: 360px;
-  }
+    }
+
+    @media (max-width: 640px) {
+      top: 750px;
+      width: 300px;
+      height: 45px;
+      font-size: 1em;
+      left: calc(15% - 600px + 620px);
+    }
   }
 
   &__text:nth-of-type(1) {
@@ -91,6 +108,18 @@ left: 50px;  }
     @media (max-width: 850px) {
       left: 5%;
       top: 70px;
+    }
+
+    @media (max-width: 720px) {
+      left: 2%;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 18px;
+      letter-spacing: -1px;
+      width: 461px;
+      line-height: 1.5em;
+      top: 40px;
     }
   }
 
@@ -116,7 +145,17 @@ left: 50px;  }
       bottom: 90px;
     }
     @media (max-width: 850px) {
-left: 50px;  }
+      left: 50px;
+    }
+
+    @media (max-width: 720px) {
+      left: 10px;
+    }
+
+     @media (max-width: 640px) {
+      width: 460px;
+      
+    }
   }
 
   &__text:nth-of-type(3) {
@@ -141,9 +180,18 @@ left: 50px;  }
       bottom: 250px;
     }
     @media (max-width: 850px) {
-left: 50px; 
-width: 650px;
-font-size: 36px; }
+      left: 50px;
+      width: 650px;
+      font-size: 36px;
+    }
+    @media (max-width: 720px) {
+      left: 10px;
+    }
+
+     @media (max-width: 640px) {
+      width: 431px;
+      bottom: 300px;
+    }
   }
 
   &-item__text {
@@ -154,6 +202,11 @@ font-size: 36px; }
     border-style: solid;
     letter-spacing: 0.1px;
     margin-bottom: 7px;
+
+    @media (max-width: 640px) {
+      font-size: 16px;
+      line-height: 1.2em;
+    }
   }
 
   &-item__num {
@@ -168,6 +221,10 @@ font-size: 36px; }
       color: #f6d700;
       cursor: pointer;
     }
+
+    @media (max-width: 640px) {
+      font-size: 46px;
+    }
   }
 
   &__list {
@@ -175,11 +232,16 @@ font-size: 36px; }
       position: relative;
       left: 200px;
       top: 100px;
-
     }
     @media (max-width: 850px) {
-left: 260px; 
-top: 55px; }
+      left: 260px;
+      top: 55px;
+    }
+
+    @media (max-width: 640px) {
+      transform: scale(0.8);
+      left: 245px;
+    }
   }
 
   &__list li:nth-child(1) {
@@ -238,5 +300,9 @@ top: 55px; }
   @media (max-width: 1024px) {
     font-size: 20px;
     height: 1500px;
+  }
+
+  @media (max-width: 640px) {
+    height: 1300px;
   }
 }

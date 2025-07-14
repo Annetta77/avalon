@@ -125,6 +125,14 @@ html {
     transform: scale(0.6);
     left: 50px;
   }
+
+    @media (max-width: 720px) {
+transform: scale(0.5);    
+  }
+
+  @media (max-width: 640px) {
+      transform: scale(0.45);
+    }
 }
 
 .pulse-ring {

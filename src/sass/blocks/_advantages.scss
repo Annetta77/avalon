@@ -15,6 +15,11 @@
       font-weight: 500;
       padding-bottom: 20px;
       text-align: center;
+
+       @media (max-width: 640px) {
+      font-size: 20px;
+      
+    }
     }
 
     &-text {
@@ -22,6 +27,11 @@
       line-height: 1.55;
       font-weight: 300;
       text-align: center;
+
+       @media (max-width: 640px) {
+      font-size: 16px;
+      
+    }
     }
 
     &-item {
@@ -52,6 +62,11 @@
         width: 576px;
         padding-bottom: 25px;
       }
+
+       @media (max-width: 640px) {
+      width: auto;
+      
+    }
     }
 
     @media (max-width: 1024px) {
@@ -75,6 +90,11 @@
     @media (max-width: 1024px) {
       flex-direction: column;
     }
+
+     @media (max-width: 640px) {
+      
+      width: 100%;
+    }
   }
 
   &__steps-item {
@@ -94,6 +114,11 @@
       @media (max-width: 1024px) {
         width: 190px;
       }
+
+       @media (max-width: 640px) {
+      
+      width: 170px;
+    }
     }
 
     @media (max-width: 1024px) {
@@ -104,6 +129,11 @@
       align-items: center;
       padding-bottom: 20px;
     }
+     @media (max-width: 640px) {
+      
+      width: 90vw;
+      font-size: 16px;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -113,4 +143,8 @@
     flex-direction: column;
     padding-top: 25px;
   }
+
+   @media (max-width: 640px) {
+
+    }
 }

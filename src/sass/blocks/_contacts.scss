@@ -15,6 +15,9 @@
   &__item {
     display: flex;
     align-items: center;
+
+     @media (max-width: 640px) {
+  }
   }
 
   &__img-link svg {
@@ -26,10 +29,17 @@
     @media (max-width: 1024px) {
       display: none;
     }
+     @media (max-width: 1121px) {
+    display: none;
+  }
   }
 
   @media (max-width: 1024px) {
     gap: 15px;
     margin-left: 20px;
+  }
+
+   @media (max-width: 640px) {
+margin-left: 0;
   }
 }

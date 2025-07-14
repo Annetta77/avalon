@@ -44,12 +44,21 @@
     font-size: 1.1em;
     font-weight: 500;
 
-     @media (max-width: 1024px) {
-    margin-right: 20px;
-  }
-  }
+    @media (max-width: 1024px) {
+      margin-right: 20px;
+    }
 
+    @media (max-width: 640px) {
+      width: 110px;
+      font-size: 0.9em;
+    }
 
+    img {
+      @media (max-width: 640px) {
+        width: 90px;
+      }
+    }
+  }
 
   &__btn {
     margin-top: auto;
@@ -74,6 +83,11 @@
       margin-left: 20px;
       font-size: 1.2em;
     }
+
+    @media (max-width: 640px) {
+      font-size: 1em;
+      width: 160px;
+    }
   }
 
   &__burger-btn {
@@ -90,11 +104,39 @@
     overflow: hidden;
   }
 
+  @media (max-width: 1333px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1255px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1122px) {
+    width: 70%;
+  }
   @media (max-width: 1024px) {
     font-size: 0.8em;
     width: 70%;
   }
   @media (max-width: 850px) {
     width: 90%;
+  }
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 5px;
+    margin-left: -3px;
+    padding-bottom: 8px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
   }
 }
