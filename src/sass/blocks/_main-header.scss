@@ -66,6 +66,11 @@
       margin-bottom: -20px;
       letter-spacing: 1px;
     }
+
+    @media (max-width: 850px) {
+      font-size: 1.2em;
+      letter-spacing: -2px;
+    }
   }
 
   &__title-text {
@@ -79,6 +84,11 @@
 
     @media (max-width: 1024px) {
       letter-spacing: normal;
+    }
+
+    @media (max-width: 850px) {
+      font-size: 1.2em;
+      letter-spacing: -2px;
     }
   }
   &__text {
@@ -124,6 +134,10 @@
       font-size: 1.2em;
       left: 500px;
     }
+
+    @media (max-width: 850px) {
+      bottom: 300px;
+    }
   }
 
   &__list {
@@ -143,18 +157,26 @@
     left: 50%;
 
     @media (max-width: 1366px) {
-      // transform: translateX(100px); /* Настройте нужное значение */
       left: 800px;
     }
 
     @media (max-width: 1024px) {
-      top: calc(100vh - 24px + -104px);
+      top: calc(50vh - 24px + -104px);
       left: 650px;
+    }
+
+    @media (max-width: 850px) {
+      left: 550px;
+      top: calc(100vh - 10px + -104px);
     }
   }
 
   &__item {
     line-height: 48px;
+
+    @media (max-width: 850px) {
+      width: 400px;
+    }
   }
 
   &__form {
@@ -179,7 +201,6 @@
     right: 20px;
     width: 40%;
     @media (max-width: 2000px) {
-      // width: 50%;
       margin-left: 7%;
       padding-right: 0;
     }

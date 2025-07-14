@@ -41,12 +41,13 @@
     border-color: transparent;
     border-style: solid;
 
-    
+    @media (max-width: 850px) {
+      left: 50px;
+      width: 537px;
+    }
   }
 
   @media (max-width: 1024px) {
     width: 100%;
-
   }
-
 }

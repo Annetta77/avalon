@@ -118,7 +118,12 @@ html {
   @media (max-width: 1024px) {
     max-width: 1024px;
     transform: scale(0.7);
-    top: 200px; /* Опционально: плавное уменьшение */
+    top: 200px;
+  }
+
+  @media (max-width: 850px) {
+    transform: scale(0.6);
+    left: 50px;
   }
 }
 
@@ -161,8 +166,6 @@ html {
   height: 705px;
   animation: pulse-wave 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   animation-delay: 0.2s;
-
- 
 }
 
 .pulse-ring:nth-child(4) {
@@ -203,6 +206,12 @@ html {
     width: 123px;
     height: 143px;
     left: calc(60% - 600px + 499px);
+  }
+
+  @media (max-width: 850px) {
+    width: 200px;
+    height: auto;
+    left: calc(40% - 600px + 499px);
   }
 }
 

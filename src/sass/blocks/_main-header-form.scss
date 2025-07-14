@@ -9,7 +9,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    'label-name label-phone button'
+    'label-name label-phone label-phone'
     'input-name input-phone button '
     'text text text';
   grid-auto-flow: row;
@@ -36,7 +36,6 @@
     border-radius: 15px;
     font-size: 14px;
     text-transform: uppercase;
-    margin-top: 18px;
     font-weight: 500;
 
     @media (max-width: 1366px) {
@@ -76,15 +75,17 @@
   @media (max-width: 1366px) {
     max-width: 504px;
     bottom: 30px;
-    // left: 480px;
     column-gap: 10px;
     bottom: 50px;
     margin-left: 10%;
   }
 
-    @media (max-width: 1024px) {
-      bottom: 20px;
-      left: 400px;
-    }
+  @media (max-width: 1024px) {
+    bottom: 20px;
+    left: 400px;
+  }
 
+  @media (max-width: 850px) {
+    left: 270px;
+  }
 }

@@ -239,6 +239,9 @@
     height: 1480px;
     padding-top: 0;
   }
+
+  @media (max-width: 850px) {
+left: -110px;  }
 }
 
 @keyframes border-flow {
