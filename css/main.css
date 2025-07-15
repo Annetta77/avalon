@@ -830,7 +830,7 @@ input.touched:invalid {
 }
 @media (max-width: 480px) {
   .main-header__title-cont {
-    top: calc(30vh - 29px - 39px);
+    top: calc(15vh - 29px - 39px);
   }
 }
 .main-header__title {
@@ -1046,8 +1046,7 @@ input.touched:invalid {
   .main-header__list {
     left: 210px;
     padding-left: 10px;
-    top: calc(100vh - 10px - 104px);
-    height: auto;
+    top: calc(60vh - 10px - 104px);
   }
 }
 .main-header__item {
@@ -1130,6 +1129,11 @@ input.touched:invalid {
     margin: 0 auto;
     overflow: hidden;
     height: 913px;
+  }
+}
+@media (max-width: 480px) {
+  .main-header {
+    height: 2000px;
   }
 }
 
