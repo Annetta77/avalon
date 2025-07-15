@@ -53,11 +53,32 @@
       font-size: 0.9em;
     }
 
+    @media (max-width: 480px) {
+      font-size: 0.7em;
+      margin-left: 1%;
+      margin-right: 2%;
+      gap: 2%;
+      width: auto;
+    }
+
     img {
       @media (max-width: 640px) {
         width: 90px;
       }
+
+      @media (max-width: 480px) {
+      }
     }
+  }
+
+  &__text-logo-link {
+    @media (max-width: 480px) {
+      width: 40px;
+    }
+  }
+
+  &__logo-link {
+    width: 42px;
   }
 
   &__btn {
@@ -88,6 +109,13 @@
       font-size: 1em;
       width: 160px;
     }
+
+      @media (max-width: 480px) {
+        width: 84px;
+        height: 40px;
+        font-size: 0.8em;
+        margin-left: 3%;
+      }
   }
 
   &__burger-btn {
@@ -96,6 +124,10 @@
     @media (max-width: 1024px) {
       margin-left: 15px;
     }
+
+      @media (max-width: 480px) {
+      width: 35px;
+      }
   }
 
   @media (max-width: 1366px) {

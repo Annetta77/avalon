@@ -32,6 +32,10 @@
       font-size: 16px;
       
     }
+
+    @media (max-width: 480px) {
+width: 200px;
+      }
     }
 
     &-item {
@@ -67,6 +71,10 @@
       width: auto;
       
     }
+
+    @media (max-width: 480px) {
+
+      }
     }
 
     @media (max-width: 1024px) {
@@ -147,4 +155,7 @@
    @media (max-width: 640px) {
 
     }
+    @media (max-width: 480px) {
+height: 1480px;
+      }
 }

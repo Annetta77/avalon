@@ -16,6 +16,9 @@
     @media (max-width: 640px) {
       width: 212px;
     }
+    @media (max-width: 480px) {
+      width: 133px;
+    }
   }
 
   &__telegram {
@@ -31,6 +34,9 @@
 
     @media (max-width: 640px) {
       width: 212px;
+    }
+    @media (max-width: 480px) {
+      width: 133px;
     }
   }
 }

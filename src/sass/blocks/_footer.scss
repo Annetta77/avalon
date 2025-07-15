@@ -64,13 +64,17 @@
     @media (max-width: 720px) {
       font-size: 30px;
       width: 580px;
-      margin-left: -40px;
+      // margin-left: -40px;
       margin-bottom: 20px;
     }
 
     @media (max-width: 640px) {
       width: 400px;
-      margin-left: -20px;
+      // margin-left: -20px;
+    }
+
+    @media (max-width: 480px) {
+      width: 240px;
     }
   }
 
@@ -104,14 +108,14 @@
       }
 
       @media (max-width: 720px) {
-        margin-left: -20px;
+        // margin-left: -20px;
         font-size: 16px;
       }
     }
     .input-name--foot {
       width: 189px;
       grid-area: input-name;
-      margin-right: 15px;
+      // margin-right: 15px;
 
       @media (max-width: 1024px) {
         width: 490px;
@@ -120,11 +124,14 @@
       @media (max-width: 720px) {
         width: 540px;
         height: 50px;
-        margin-left: -20px;
+        // margin-left: -20px;
       }
 
       @media (max-width: 640px) {
         width: 400px;
+      }
+      @media (max-width: 480px) {
+        width: 240px;
       }
     }
     .label-phone--foot {
@@ -137,7 +144,7 @@
       }
 
       @media (max-width: 720px) {
-        margin-left: -20px;
+        // margin-left: -20px;
         font-size: 16px;
       }
     }
@@ -153,6 +160,9 @@
 
       @media (max-width: 640px) {
         width: 400px;
+      }
+      @media (max-width: 480px) {
+        width: 240px;
       }
     }
     & button {
@@ -176,11 +186,16 @@
 
       @media (max-width: 720px) {
         width: 540px;
-        margin-left: -20px;
+        // margin-left: -20px;
       }
 
       @media (max-width: 640px) {
         width: 400px;
+      }
+
+      @media (max-width: 480px) {
+        width: 240px;
+        height: 50px;
       }
     }
     p {
@@ -194,6 +209,10 @@
 
       @media (max-width: 720px) {
         font-size: 12px;
+      }
+      @media (max-width: 480px) {
+        width: 240px;
+        // margin-left: 20px;
       }
     }
 
@@ -221,6 +240,10 @@
       @media (max-width: 640px) {
         width: 400px;
       }
+
+      @media (max-width: 480px) {
+        width: 240px;
+      }
     }
 
     @media (max-width: 1024px) {
@@ -235,7 +258,13 @@
       padding-top: 40px;
     }
     @media (max-width: 640px) {
-      width: 91%;
+      width: 320px;
+    }
+
+    @media (max-width: 480px) {
+      justify-content: center;
+      align-items: center;
+      width: 90%;
     }
   }
 
@@ -264,11 +293,15 @@
     @media (max-width: 720px) {
       width: 540px;
       height: 50px;
-      margin-left: -20px;
+      // margin-left: -20px;
     }
 
     @media (max-width: 640px) {
       width: 400px;
+    }
+
+    @media (max-width: 480px) {
+      width: 240px;
     }
   }
 

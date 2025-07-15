@@ -19,8 +19,7 @@
     align-items: center;
     margin: 0 auto;
 
-     @media (max-width: 640px) {
-      
+    @media (max-width: 640px) {
       width: 100%;
     }
   }
@@ -45,9 +44,14 @@
       margin-bottom: 50px;
     }
 
-     @media (max-width: 640px) {
-      
+    @media (max-width: 640px) {
       width: 400px;
+    }
+
+    @media (max-width: 480px) {
+      width: 260px;
+      font-size: 52px;
+      letter-spacing: -1px;
     }
   }
 
@@ -66,14 +70,16 @@
       align-items: start;
       justify-content: start;
       margin-left: 0;
-            gap: 35px;
-
+      gap: 35px;
     }
 
-     @media (max-width: 640px) {
+    @media (max-width: 640px) {
       margin: 0 auto;
       margin-bottom: 75px;
-      
+    }
+
+    @media (max-width: 480px) {
+      width: 80%;
     }
   }
 

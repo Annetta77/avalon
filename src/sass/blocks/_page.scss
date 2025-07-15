@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: visible; 
+  overflow: visible;
   &__modal {
     display: none;
   }
@@ -18,10 +18,14 @@
   @media (max-width: 1366px) {
     width: 100%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
   }
 
-      @media (max-width: 1024px) {
-    
-}
+  @media (max-width: 1024px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0;
+  }
 }

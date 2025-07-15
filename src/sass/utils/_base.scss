@@ -126,13 +126,17 @@ html {
     left: 50px;
   }
 
-    @media (max-width: 720px) {
-transform: scale(0.5);    
+  @media (max-width: 720px) {
+    transform: scale(0.5);
   }
 
   @media (max-width: 640px) {
-      transform: scale(0.45);
-    }
+    transform: scale(0.45);
+  }
+
+  @media (max-width: 480px) {
+    transform: scale(0.35);
+  }
 }
 
 .pulse-ring {
@@ -370,4 +374,9 @@ html {
 
 input.touched:invalid {
   border-color: #ff4444 !important;
+}
+
+.strengths__cont {
+  width: 100%;
+  position: relative;
 }
