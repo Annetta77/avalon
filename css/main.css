@@ -1067,7 +1067,7 @@ input.touched:invalid {
   }
 }
 .main-header__form {
-  z-index: 8;
+  z-index: 10;
 }
 .main-header .grid-left {
   flex-shrink: 0;
@@ -1243,6 +1243,7 @@ input.touched:invalid {
   background-color: inherit;
 }
 .main-header-form .input-wrapper {
+  color: rgb(51, 51, 51);
   width: 177px;
 }
 @media (max-width: 640px) {
@@ -1857,6 +1858,9 @@ input.touched:invalid {
   height: 1410px;
   margin-bottom: -90px;
   background-color: #fff;
+}
+.strengths__cont {
+  width: 90%;
 }
 .strengths__title {
   position: absolute;
