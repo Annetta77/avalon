@@ -3113,7 +3113,7 @@ input.touched:invalid {
 }
 @media (max-width: 640px) {
   .footer__form {
-    width: 91%;
+    width: 280px;
   }
 }
 .footer__created {
