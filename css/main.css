@@ -3061,7 +3061,6 @@ input.touched:invalid {
 @media (max-width: 480px) {
   .footer__form p {
     width: 240px;
-    margin-left: -20px;
   }
 }
 .footer__form input {
