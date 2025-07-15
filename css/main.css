@@ -469,7 +469,7 @@ input.touched:invalid {
   .page {
     width: 100%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
   }
 }
 @media (max-width: 1024px) {
@@ -3065,6 +3065,7 @@ input.touched:invalid {
 @media (max-width: 480px) {
   .footer__form p {
     width: 240px;
+    margin-left: 20px;
   }
 }
 .footer__form input {
@@ -3117,7 +3118,7 @@ input.touched:invalid {
 }
 @media (max-width: 640px) {
   .footer__form {
-    width: 280px;
+    width: 320px;
   }
 }
 .footer__created {
