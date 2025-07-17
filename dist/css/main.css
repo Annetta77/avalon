@@ -3337,7 +3337,7 @@ input.touched:invalid {
   display: flex;
   align-items: center;
   padding-bottom: 60px;
-  gap: 100px;
+  gap: 110px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -3772,7 +3772,6 @@ input.touched:invalid {
   width: auto;
   padding-right: 20px;
   position: static;
-  margin: 0 auto;
 }
 .supply-footer .supply-request .request-form__title {
   font-size: 36px;
@@ -3811,11 +3810,14 @@ input.touched:invalid {
     width: 336px;
   }
 }
-.supply-footer .supply-request h2 {
+.supply-footer .supply-request .request-form__title {
   font-size: 70px;
 }
-.supply-footer .supply-request form {
+.supply-footer .supply-request .supply-footer-form {
   width: 681px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 10%;
 }
 .supply-footer .supply-request input {
   width: 463px;
