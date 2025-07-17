@@ -3768,6 +3768,12 @@ input.touched:invalid {
     width: 100%;
   }
 }
+.supply-footer .supply-request .request-form {
+  width: auto;
+  padding-right: 20px;
+  position: static;
+  margin: 0 auto;
+}
 .supply-footer .supply-request .request-form__title {
   font-size: 36px;
 }
@@ -3795,6 +3801,7 @@ input.touched:invalid {
 }
 .supply-footer .supply-request p:nth-child(1) {
   font-size: 12px;
+  margin-bottom: 0;
 }
 .supply-footer .supply-request p:nth-of-type(2) {
   font-size: 16px;
@@ -3822,6 +3829,8 @@ input.touched:invalid {
 @media (max-width: 480px) {
   .supply-footer .supply-request input {
     width: 238px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .supply-footer .supply-request .input-wrapper {
@@ -3836,6 +3845,8 @@ input.touched:invalid {
 @media (max-width: 480px) {
   .supply-footer .supply-request .input-wrapper {
     width: 238px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .supply-footer .supply-request button {
