@@ -463,6 +463,12 @@ input.touched:invalid {
   color: #ff8562;
 }
 
+@media (max-width: 480px) {
+  .supply {
+    width: 100%;
+  }
+}
+
 .page {
   font-family: "Gilroy", Arial, sans-serif;
   margin: 0 auto;
@@ -3355,6 +3361,11 @@ input.touched:invalid {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 480px) {
+  .supply-main-header .container {
+    padding: 0 20px;
+  }
+}
 .supply-main-header__text-cont {
   display: flex;
   flex-direction: column;
@@ -3364,6 +3375,11 @@ input.touched:invalid {
 @media (max-width: 960px) {
   .supply-main-header__text-cont {
     width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-main-header__text-cont {
+    width: auto;
   }
 }
 .supply-main-header__title {
@@ -3389,6 +3405,12 @@ input.touched:invalid {
   .supply-main-header__title {
     font-size: 32px;
     width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-main-header__title {
+    width: auto;
+    font-size: 30px;
   }
 }
 .supply-main-header .line2 {
@@ -3452,6 +3474,12 @@ input.touched:invalid {
     height: 1px;
   }
 }
+@media (max-width: 480px) {
+  .supply-main-header .line1-cont {
+    height: 0.5px;
+    width: 1%;
+  }
+}
 .supply-main-header .line1-cont::before {
   content: "";
   position: absolute;
@@ -3465,6 +3493,12 @@ input.touched:invalid {
 @media (max-width: 1200px) {
   .supply-main-header .line1-cont::before {
     height: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-main-header .line1-cont::before {
+    height: 0.5px;
+    right: -170px;
   }
 }
 .supply-main-header .line1-cont::after {
@@ -3482,6 +3516,12 @@ input.touched:invalid {
     height: 1px;
   }
 }
+@media (max-width: 480px) {
+  .supply-main-header .line1-cont::after {
+    height: 0.5px;
+    left: -170px;
+  }
+}
 
 .supply-form .form {
   position: relative;
@@ -3493,6 +3533,11 @@ input.touched:invalid {
 @media (max-width: 768px) {
   .supply-form .form__title {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-form .form__title {
+    margin-bottom: 110px;
   }
 }
 .supply-form .form__title-text {
@@ -3519,7 +3564,21 @@ input.touched:invalid {
   .supply-form .form__title-text {
     font-size: 0.7em;
     top: 200px;
-    left: 20px;
+    left: auto;
+  }
+}
+@media (max-width: 480px) {
+  .supply-form .form__title-text {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 240px;
+    top: 270px;
+    left: auto;
+  }
+}
+@media (max-width: 480px) {
+  .supply-form .form__form {
+    height: 700px;
   }
 }
 
@@ -3569,6 +3628,12 @@ input.touched:invalid {
 @media (max-width: 768px) {
   .supply-services__item {
     width: 503px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-services__item {
+    width: 80%;
+    height: 550px;
   }
 }
 .supply-services__img-cont {
@@ -3627,6 +3692,11 @@ input.touched:invalid {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
+@media (max-width: 480px) {
+  .supply-services__btn {
+    height: 50px;
+  }
+}
 .supply-services .social {
   margin-bottom: 50px;
 }
@@ -3641,6 +3711,12 @@ input.touched:invalid {
 @media (max-width: 768px) {
   .supply-services .social .social-btn {
     width: 264px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-services .social .social-btn {
+    width: 133px;
+    height: 48px;
   }
 }
 @media (max-width: 768px) {
@@ -3687,6 +3763,11 @@ input.touched:invalid {
     width: 90%;
   }
 }
+@media (max-width: 480px) {
+  .supply-footer .supply-request {
+    width: 100%;
+  }
+}
 .supply-footer .supply-request .request-form__title {
   font-size: 36px;
 }
@@ -3705,6 +3786,11 @@ input.touched:invalid {
     position: static;
     margin: 0 auto;
     width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .supply-footer .supply-request .request-form {
+    width: 100%;
   }
 }
 .supply-footer .supply-request p:nth-child(1) {
@@ -3733,6 +3819,11 @@ input.touched:invalid {
     height: 50px;
   }
 }
+@media (max-width: 480px) {
+  .supply-footer .supply-request input {
+    width: 238px;
+  }
+}
 .supply-footer .supply-request .input-wrapper {
   width: 463px;
 }
@@ -3740,6 +3831,11 @@ input.touched:invalid {
   .supply-footer .supply-request .input-wrapper {
     width: 336px;
     height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .supply-footer .supply-request .input-wrapper {
+    width: 238px;
   }
 }
 .supply-footer .supply-request button {
