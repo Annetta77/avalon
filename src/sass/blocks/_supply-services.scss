@@ -31,6 +31,11 @@
     @media (max-width: 1024px) {
         width: 250px;
       }
+
+      @media (max-width: 960px) {
+        width: 550px;
+        height: 400px;
+      }
   }
 
   &__img-cont {
@@ -48,6 +53,11 @@
 
     @media (max-width: 1024px) {
         font-size: 22px;
+      }
+
+      @media (max-width: 960px) {
+        font-size: 25px;
+        font-weight: 400;
       }
   }
 
@@ -73,6 +83,9 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: auto;
+    @media (max-width: 960px) {
+        height: 80px;
+      }
 
     &:hover {
       color: #f6d700;
@@ -88,6 +101,10 @@
 
     & .social-btn {
       width: 143px;
+
+      @media (max-width: 960px) {
+        width: 293px;
+      }
     }
   }
 }

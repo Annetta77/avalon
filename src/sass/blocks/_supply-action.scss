@@ -18,5 +18,11 @@
     font-weight: 300;
     font-size: 26px;
     line-height: 1.45;
+
+    @media (max-width: 960px) {
+        font-size: 22px; 
+        max-width: 600px;
+        text-align: center;
+      }
   }
 }

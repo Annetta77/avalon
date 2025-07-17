@@ -19,9 +19,17 @@
       border-radius: 0;
     }
 
+    @media (max-width: 960px) {
+        border-radius: 30px;
+      }
+
     & .request-form {
       @media (max-width: 1024px) {
         transform: scale(0.8);
+      }
+
+      @media (max-width: 960px) {
+        transform: scale(0.9);
       }
     }
 
@@ -39,6 +47,9 @@
 
     & form {
       width: 681px;
+
+      @media (max-width: 960px) {
+      }
     }
 
     & input {
