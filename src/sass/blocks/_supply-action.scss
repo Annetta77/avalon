@@ -4,7 +4,7 @@
   align-items: center;
   margin-top: 135px;
   padding-bottom: 40px;
-  
+
   &__text:nth-child(1) {
     font-size: 82px;
     line-height: 1.17;
@@ -12,6 +12,10 @@
     letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
   }
 
   &__text:nth-child(2) {
@@ -20,9 +24,9 @@
     line-height: 1.45;
 
     @media (max-width: 960px) {
-        font-size: 22px; 
-        max-width: 600px;
-        text-align: center;
-      }
+      font-size: 22px;
+      max-width: 600px;
+      text-align: center;
+    }
   }
 }

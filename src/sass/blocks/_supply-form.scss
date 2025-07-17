@@ -4,6 +4,14 @@
     &__title {
       font-weight: 400;
       grid-area: title;
+
+      @media (max-width: 768px) {
+        margin-bottom: 60px;
+      }
+
+       @media (max-width: 480px) {
+     margin-bottom: 110px;
+      }
     }
 
     &__title-text {
@@ -24,23 +32,29 @@
         font-size: 18px;
         top: 240px;
       }
-    }
 
-    @media (max-width: 960px) {
+      @media (max-width: 768px) {
+        font-size: 0.7em;
+        top: 200px;
+        left: auto;
       }
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+        line-height: 1.4;
+        width: 240px;
+        top: 270px;
+        left: auto;
+      }
+      @media (max-width: 480px) {
+      }
+    }
   }
 
-  // .form__form {
-  //   @media (max-width: 1024px) {
-  //     display: grid;
-  //     grid-template-columns: repeat(3, auto);
-  //     grid-template-rows: repeat(5, auto);
-  //     grid-template-areas:
-  //       'title title title'
-  //       'text1 text1 text1'
-  //       'name name name'
-  //       'input input btn'
-  //       'text text text';
-  //   }
-  // }
+  .form__form {
+    @media (max-width: 480px) {
+      height: 700px;
+
+    }
+  }
 }
