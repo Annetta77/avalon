@@ -45,6 +45,11 @@
       background-size: cover;
     }
 
+@media (max-width: 1024px) {
+        width: 100vw;
+        background-size: cover;
+      }
+
     @media (max-width: 640px) {
     }
   }

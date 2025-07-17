@@ -1,0 +1,43 @@
+.supply-form {
+  & .form {
+    position: relative;
+    &__title {
+      font-weight: 400;
+      grid-area: title;
+    }
+
+    &__title-text {
+      font-weight: 300;
+      opacity: 0.5;
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding-top: 0;
+      padding-bottom: auto;
+      position: absolute;
+      top: 250px;
+      margin-bottom: 50px;
+      grid-area: text1;
+
+      @media (max-width: 1024px) {
+        width: 530px;
+        font-size: 18px;
+        top: 240px;
+      }
+    }
+  }
+
+  // .form__form {
+  //   @media (max-width: 1024px) {
+  //     display: grid;
+  //     grid-template-columns: repeat(3, auto);
+  //     grid-template-rows: repeat(5, auto);
+  //     grid-template-areas:
+  //       'title title title'
+  //       'text1 text1 text1'
+  //       'name name name'
+  //       'input input btn'
+  //       'text text text';
+  //   }
+  // }
+}
