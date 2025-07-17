@@ -3772,7 +3772,7 @@ input.touched:invalid {
   width: auto;
   padding-right: 20px;
   position: static;
-  margin: 0 auto;
+  margin: auto;
 }
 .supply-footer .supply-request .request-form__title {
   font-size: 36px;
