@@ -3529,6 +3529,7 @@ input.touched:invalid {
 .supply-form .form__title {
   font-weight: 400;
   grid-area: title;
+  margin-bottom: 150px;
 }
 @media (max-width: 768px) {
   .supply-form .form__title {
@@ -3734,6 +3735,7 @@ input.touched:invalid {
 .supply-footer {
   width: 100%;
   max-width: 100vw;
+  margin-bottom: 30px;
 }
 .supply-footer .supply-request {
   width: 1412px;
@@ -3867,5 +3869,93 @@ input.touched:invalid {
 .supply-footer .supply-request .form-cont {
   display: flex;
   justify-content: center;
+}
+
+.buyout__list-cont {
+  background-color: #f6d700;
+}
+.buyout__list {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.buyout__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.buyout__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.suppliers {
+  background-color: #ebebeb;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.suppliers__title-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1150px;
+  text-align: center;
+  margin-bottom: 105px;
+  justify-content: center;
+  align-items: center;
+}
+.suppliers__title {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.23;
+}
+.suppliers__title-text {
+  font-size: 24px;
+  max-width: 560px;
+  line-height: 1.5;
+}
+.suppliers__list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.suppliers__item-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.suppliers__item {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.suppliers__item-title {
+  font-size: 18px;
+  line-height: 1.35;
+  color: #000000;
+  font-weight: 500;
+}
+.suppliers__item-text {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.suppliers .social > .social-btn {
+  width: 143px;
+  height: 48px;
 }
 /*# sourceMappingURL=main.css.map */
