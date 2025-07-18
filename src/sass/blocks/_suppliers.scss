@@ -1,0 +1,155 @@
+.suppliers {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;   
+   margin-bottom: 50px;
+
+
+  &__cont {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+    @media (max-width: 960px) {
+      width: 600px;
+
+    }
+
+    @media (max-width: 640px) {
+     max-width: 600px;
+     width: 90%;
+    }
+
+   
+  }
+
+  &__title-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 940px;
+    text-align: center;
+    margin-bottom: 105px;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 960px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 640px) {
+     gap: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.23;
+
+    @media (max-width: 1200px) {
+      font-size: 38px;
+    }
+
+    @media (max-width: 640px) {
+     font-size: 32px;
+    }
+  }
+
+  &__title-text {
+    font-size: 24px;
+    max-width: 560px;
+    line-height: 1.5;
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    @media (max-width: 640px) {
+     line-height: 1.4;
+     font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 60px;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__item-cont {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__item {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (max-width: 960px) {
+      width: 600px;
+    }
+
+    @media (max-width: 640px) {
+     max-width: 600px;
+     width: 90%;
+    }
+  }
+
+  &__item-title {
+    font-size: 18px;
+    line-height: 1.35;
+    color: #000000;
+    font-weight: 500;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 640px) {
+     font-size: 14px;
+    }
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+    }
+    @media (max-width: 640px) {
+     font-size: 12px;
+     line-height: 1.45;
+    }
+  }
+
+  & .social > .social-btn {
+    width: 143px;
+    height: 48px;
+
+    @media (max-width: 960px) {
+      width: 293px;
+    }
+
+    @media (max-width: 640px) {
+     max-width: 293px;
+     width: 45vw;
+    }
+  }
+}

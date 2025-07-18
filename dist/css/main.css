@@ -3529,6 +3529,7 @@ input.touched:invalid {
 .supply-form .form__title {
   font-weight: 400;
   grid-area: title;
+  margin-bottom: 150px;
 }
 @media (max-width: 768px) {
   .supply-form .form__title {
@@ -3734,6 +3735,7 @@ input.touched:invalid {
 .supply-footer {
   width: 100%;
   max-width: 100vw;
+  margin-bottom: 30px;
 }
 .supply-footer .supply-request {
   width: 1412px;
@@ -3867,5 +3869,209 @@ input.touched:invalid {
 .supply-footer .supply-request .form-cont {
   display: flex;
   justify-content: center;
+}
+
+.buyout__list-cont {
+  background-color: #f6d700;
+}
+.buyout__list {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 960px) {
+  .buyout__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .buyout__list {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+.buyout__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.buyout__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+@media (max-width: 640px) {
+  .buyout__title {
+    font-weight: 400;
+  }
+}
+
+.suppliers {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.suppliers__cont {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+@media (max-width: 960px) {
+  .suppliers__cont {
+    width: 600px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__cont {
+    max-width: 600px;
+    width: 90%;
+  }
+}
+.suppliers__title-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 940px;
+  text-align: center;
+  margin-bottom: 105px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .suppliers__title-cont {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__title-cont {
+    gap: 20px;
+  }
+}
+.suppliers__title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.23;
+}
+@media (max-width: 1200px) {
+  .suppliers__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__title {
+    font-size: 32px;
+  }
+}
+.suppliers__title-text {
+  font-size: 24px;
+  max-width: 560px;
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+  .suppliers__title-text {
+    font-size: 22px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__title-text {
+    line-height: 1.4;
+    font-size: 20px;
+  }
+}
+.suppliers__list {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 60px;
+}
+@media (max-width: 960px) {
+  .suppliers__list {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}
+.suppliers__item-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.suppliers__item {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 960px) {
+  .suppliers__item {
+    width: 600px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__item {
+    max-width: 600px;
+    width: 90%;
+  }
+}
+.suppliers__item-title {
+  font-size: 18px;
+  line-height: 1.35;
+  color: #000000;
+  font-weight: 500;
+}
+@media (max-width: 1200px) {
+  .suppliers__item-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__item-title {
+    font-size: 14px;
+  }
+}
+.suppliers__item-text {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+@media (max-width: 1200px) {
+  .suppliers__item-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers__item-text {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+}
+.suppliers .social > .social-btn {
+  width: 143px;
+  height: 48px;
+}
+@media (max-width: 960px) {
+  .suppliers .social > .social-btn {
+    width: 293px;
+  }
+}
+@media (max-width: 640px) {
+  .suppliers .social > .social-btn {
+    max-width: 293px;
+    width: 45vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
