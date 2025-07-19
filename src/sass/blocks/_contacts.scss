@@ -1,20 +1,31 @@
 .contacts {
   display: flex;
-  opacity: 0.9;
   justify-content: start;
   gap: 30px;
   margin-left: 40px;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 22px;
+  line-height: 31px;
 
   &__item:nth-child(2) .contacts__link {
-    font-size: 1.2em;
     text-transform: lowercase;
+    line-height: 34px;
+    font-size: 24px;
+    color: #26262b;
+    opacity: 0.8;
+
+    @media (max-width: 1255px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
+
+     @media (max-width: 1255px) {
+    }
 
     @media (max-width: 640px) {
     }
@@ -30,13 +41,23 @@
 
   &__link {
     margin-left: 15px;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+
+     @media (max-width: 1255px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
     @media (max-width: 1024px) {
       display: none;
     }
-    @media (max-width: 1121px) {
-      display: none;
-    }
+   
   }
+
+ @media (max-width: 1255px) {
+      margin-left: 10px;
+      gap: 10px;
+    }
 
   @media (max-width: 1024px) {
     gap: 15px;
@@ -44,10 +65,11 @@
   }
 
   @media (max-width: 640px) {
-    margin-left: 0;
+    margin-left: 10px;
   }
 
-   @media (max-width: 480px) {
-        gap: 5px;
-      }
+  @media (max-width: 480px) {
+    gap: 5px;
+    margin-left: 5px;
+  }
 }
