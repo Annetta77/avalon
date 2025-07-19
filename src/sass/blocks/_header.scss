@@ -1,6 +1,5 @@
 .header {
   max-width: 1200px;
-  // width: 80%;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -15,7 +14,6 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  // font-size: 1em;
   white-space: nowrap;
   word-break: normal;
   border-style: solid;
@@ -33,11 +31,9 @@
 
   z-index: 100;
   overflow: visible;
-  // padding-top: 10px;
   &__logo-cont {
     display: flex;
     margin-left: 10px;
-    // margin-right: 10px;
     align-items: center;
     gap: 25px;
     font-size: inherit;
@@ -67,11 +63,7 @@
 
     img {
       width: 56px;
-      // height: 55px;
       max-width: none;
-      // @media (max-width: 640px) {
-      //   width: 90px;
-      // }
 
       @media (max-width: 640px) {
         width: 40px;
@@ -184,9 +176,6 @@
     justify-content: space-around;
   }
 
-  // @media (max-width: 1200px) {
-  //   width: 1014px;
-  // }
   @media (max-width: 1024px) {
     justify-content: space-around;
     font-size: 0.8em;
@@ -203,7 +192,6 @@
   @media (max-width: 640px) {
     justify-content: space-around;
     padding: 10px 0;
-    // column-gap: 5%;
   }
 
   @media (max-width: 480px) {

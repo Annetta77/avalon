@@ -1,0 +1,36 @@
+.evaluation {
+  background-color: #f6d700;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &__cont {
+    max-width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin-bottom: 40px;
+  }
+
+  &__title-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 105px;
+    max-width: 560px;
+  }
+}
