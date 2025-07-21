@@ -25,11 +25,12 @@
   }
   &__title {
     font-size: 52px;
-    font-weight: 500;
-    width: 717px;
+    font-weight: 400;
+    width: 750px;
     text-align: center;
     line-height: 1.23;
     margin-bottom: 100px;
+    letter-spacing: 1px;
 
     .br-tablet {
       display: none;
@@ -90,13 +91,15 @@
     gap: 20px;
     align-items: center;
 
+    &__text {
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: 0.5px;
+    }
+
     @media (max-width: 1024px) {
       width: auto;
       font-size: 20px;
-    }
-
-    &-text {
-      font-size: 18px;
     }
   }
 
