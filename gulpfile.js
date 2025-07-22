@@ -20,6 +20,7 @@ const paths = {
   js: 'src/js/**/*.js',
   images: 'src/images/**/*.{jpg,jpeg,png,gif,svg,webp}',
   fonts: 'src/fonts/**/*.{woff,woff2}',
+  php: 'src/*.php',
 };
 
 function handleError(err) {
@@ -55,6 +56,10 @@ function copyFonts() {
   return src(paths.fonts).pipe(dest('dist/fonts')).pipe(sync.stream());
 }
 
+function copyPhp() {
+  return src(paths.php).pipe(dest('dist')).pipe(sync.stream());
+}
+
 function serve() {
   sync.init({
     server: './dist',
@@ -68,9 +73,10 @@ function serve() {
   watch(paths.js, copyJs).on('change', sync.reload);
   watch(paths.images, optimizeImages).on('change', sync.reload);
   watch(paths.fonts, copyFonts).on('change', sync.reload);
+  watch(paths.php, copyPhp).on('change', sync.reload);
 }
 
-const build = series(parallel(copyHtml, copyJs, optimizeImages, copyFonts), compileSass);
+const build = series(parallel(copyHtml, copyJs, optimizeImages, copyFonts, copyPhp), compileSass);
 
 export { build, optimizeImages as images };
 export const start = serve;
