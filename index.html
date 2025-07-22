@@ -100,40 +100,48 @@
     </header>
     <main class="page__main main">
       <section class="main__header main-header">
-        <p class="main-header__text  grid-left">Надежные решения для вашего международного бизнеса</p>
-        <div class="main-header__title-cont  grid-left">
-          <h1 class="main-header__title">ДОСТАВКА ИЗ КИТАЯ В РФ</h1>
-          <p class="main-header__title-text">Упаковка первого заказа - бесплатно</p>
-        </div>
-        <ul class="main-header__list  grid-right">
-          <li class="main-header__item">Поиск товара</li>
-          <li class="main-header__item">Проверка поставщика</li>
-          <li class="main-header__item">Выкуп в любой валюте</li>
-          <li class="main-header__item">Доставка груза</li>
-        </ul>
-        <p class="main-header__text  grid-left">
-          Узнайте лучшие цены на доставку из Китая по четырем направлениям: авиа, авто, жд и морскому транспорту.
-        </p>
-        <form action="#" method="post" class="main-header__form main-header-form  grid-right form-error-fixed">
-          <label for="name_1" class="label-name">Имя</label>
-          <input type="text" name="name" placeholder="Иван" id="name_1" class="input-name" />
-          <label for="phone_1" class="label-phone ">Телефон</label>
-          <div class="input-wrapper">
-            <input
-              class="input-phone phone"
-              type="tel"
-              name="phone"
-              placeholder=" 999 999-99-99"
-              id="phone_1"
-              maxlength="21"
-              required />
+        <div class="main-header__cont">
+          <div class="main-header__text-cont">
+            <p class="main-header__text">Надежные решения для вашего международного бизнеса</p>
           </div>
-          <button class="main-header-form__btn" type="submit">Заказать звонок</button>
-          <p class="main-header-form__text">
-            Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия политики
-            конфиденциальности.
-          </p>
-        </form>
+          <div class="main-header__title-list-cont">
+            <div class="main-header__title-cont  ">
+              <h1 class="main-header__title">ДОСТАВКА ИЗ КИТАЯ В РФ</h1>
+              <p class="main-header__title-text">Упаковка первого заказа - бесплатно</p>
+            </div>
+            <ul class="main-header__list ">
+              <li class="main-header__item">Поиск товара</li>
+              <li class="main-header__item">Проверка поставщика</li>
+              <li class="main-header__item">Выкуп в любой валюте</li>
+              <li class="main-header__item">Доставка груза</li>
+            </ul>
+          </div>
+          <div class="main-header__text-form-cont">
+            <p class="main-header__text">
+              Узнайте лучшие цены на доставку из Китая по четырем направлениям: авиа, авто, жд и морскому транспорту.
+            </p>
+            <form action="./send.php" method="POST" class="main-header__form main-header-form  form-error-fixed">
+              <label for="name_1" class="label-name">Имя</label>
+              <input type="text" name="name" placeholder="Иван" id="name_1" class="input-name" />
+              <label for="phone_1" class="label-phone ">Телефон</label>
+              <div class="input-wrapper">
+                <input
+                  class="input-phone phone"
+                  type="tel"
+                  name="phone"
+                  placeholder=" 999 999-99-99"
+                  id="phone_1"
+                  maxlength="21"
+                  required />
+              </div>
+              <button class="main-header-form__btn" type="submit">Заказать звонок</button>
+              <p class="main-header-form__text">
+                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия
+                политики конфиденциальности.
+              </p>
+            </form>
+          </div>
+        </div>
       </section>
       <section class="main__description description">
         <div class="pulse-container">
@@ -463,7 +471,7 @@
       </div>
       <section class="main__request request">
         <div class="form-cont">
-          <form action="#" method="post" class="request__request-form request-form form-error-fixed">
+          <form action="./send.php" method="POST" class="request__request-form request-form form-error-fixed">
             <p class="request-form__text"><span>[</span> доставка грузов под ключ <span>]</span></p>
             <h2 class="request-form__title">Оставьте заявку</h2>
             <p class="request-form__text">Заполните форму, и наш менеджер Вас проконсультирует</p>
@@ -604,7 +612,7 @@
     </main>
     <section class="page__form form">
       <div class="form__cont">
-        <form action="#" method="post" class="form__form">
+        <form action="./send.php" method="POST" class="form__form">
           <h2 class="form__title">Остались вопросы? Оставьте заявку!</h2>
 
           <label for="name_3" class="label-name--foot">Имя</label>
@@ -640,7 +648,7 @@
         <div class="modal__img"></div>
         <h2 class="modal__title">Закажите обратный звонок</h2>
         <p class="modal__text">Заполните форму, и наш менеджер вас проконсультирует</p>
-        <form class="modal__form">
+        <form action="./send.php" method="POST" class="modal__form">
           <input type="text" name="name" placeholder="Имя" id="name_4" />
           <div class="input-wrapper">
             <input
