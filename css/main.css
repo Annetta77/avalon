@@ -4297,6 +4297,12 @@ input.touched:invalid {
   align-items: center;
   padding-bottom: 15px;
 }
+@media screen and (max-width: 1200px) {
+  .suppliers__cont {
+    max-width: 960px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 960px) {
   .suppliers__cont {
     width: 600px;
@@ -4365,6 +4371,11 @@ input.touched:invalid {
   gap: 35px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1200px) {
+  .suppliers__list {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 960px) {
   .suppliers__list {
     flex-direction: column;
@@ -4381,6 +4392,11 @@ input.touched:invalid {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .suppliers__item {
+    width: 220px;
+  }
 }
 @media screen and (max-width: 960px) {
   .suppliers__item {
