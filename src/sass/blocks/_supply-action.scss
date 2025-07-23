@@ -13,7 +13,7 @@
     font-weight: 400;
     margin-bottom: 50px;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 36px;
     }
   }
@@ -23,7 +23,7 @@
     font-size: 26px;
     line-height: 1.45;
 
-    @media (max-width: 960px) {
+    @media screen and (max-width: 960px) {
       font-size: 22px;
       max-width: 600px;
       text-align: center;

@@ -6,12 +6,12 @@
       grid-area: title;
       margin-bottom: 150px;
 
-      @media (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         margin-bottom: 60px;
       }
 
-       @media (max-width: 480px) {
-     margin-bottom: 110px;
+      @media screen and (max-width: 480px) {
+        margin-bottom: 110px;
       }
     }
 
@@ -28,34 +28,49 @@
       margin-bottom: 50px;
       grid-area: text1;
 
-      @media (max-width: 1024px) {
-        width: 530px;
+      @media screen and (max-width: 1200px) {
+        width: 500px;
         font-size: 18px;
         top: 240px;
       }
 
-      @media (max-width: 768px) {
-        font-size: 0.7em;
-        top: 200px;
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 1.5;
+        top: 230px;
         left: auto;
       }
 
-      @media (max-width: 480px) {
+      @media screen and (max-width: 640px) {
         font-size: 20px;
         line-height: 1.4;
-        width: 240px;
-        top: 270px;
+        top: 185px;
         left: auto;
+        right: auto;
+        max-width: 80%;
       }
-      @media (max-width: 480px) {
+
+      @media screen and (max-width: 480px) {
+        font-size: 20px;
+        line-height: 1.4;
+        max-width: 240px;
+        top: 200px;
+        max-width: 80%;
+        right: auto;
+      }
+
+      @media screen and (max-width: 412px) {
+        top: 230px;
+      }
+      @media screen and (max-width: 347px) {
+        top: 250px;
       }
     }
   }
 
   .form__form {
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       height: 700px;
-
     }
   }
 }

@@ -40,20 +40,23 @@
     font-size: 1.1em;
     font-weight: 500;
 
-    @media (max-width: 1255px) {
+    @media screen and (max-width: 1255px) {
       margin-left: 0;
     }
 
-    @media (max-width: 1024px) {
-      margin-right: 20px;
+    @media screen and (max-width: 1031px) {
+      margin: 0;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
+    }
+
+    @media screen and (max-width: 640px) {
       width: 110px;
       font-size: 0.9em;
     }
 
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       font-size: 0.7em;
       margin-left: 1%;
       margin-right: 2%;
@@ -65,7 +68,11 @@
       width: 56px;
       max-width: none;
 
-      @media (max-width: 640px) {
+      @media screen and (max-width: 960px) {
+        width: 40px;
+      }
+
+      @media screen and (max-width: 640px) {
         width: 40px;
       }
     }
@@ -79,18 +86,23 @@
     opacity: 0.8;
     letter-spacing: 0.5px;
 
-    @media (max-width: 1255px) {
+    @media screen and (max-width: 1255px) {
       font-size: 20px;
       line-height: 27px;
     }
 
-    @media (max-width: 640px) {
+    @media screen and (max-width: 960px) {
+      font-size: 17px;
+      line-height: 23px;
+    }
+
+    @media screen and (max-width: 640px) {
       font-size: 14px;
       line-height: 19px;
       font-weight: 500;
     }
 
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       width: 40px;
       font-size: 11px;
       line-height: 15px;
@@ -120,23 +132,22 @@
     width: 180px;
     height: 40px;
 
-    @media (max-width: 1255px) {
+    @media screen and (max-width: 1255px) {
       margin-left: 5px;
     }
 
-    @media (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       width: 170px;
-      margin-left: 20px;
       font-size: 1.2em;
     }
 
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
       font-size: 1em;
       width: 160px;
       margin-left: 5px;
     }
 
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       width: 84px;
       height: 40px;
       font-size: 0.8em;
@@ -147,54 +158,70 @@
   &__burger-btn {
     margin-left: 30px;
 
-    @media (max-width: 1255px) {
+    @media screen and (max-width: 1255px) {
       margin-left: 5px;
     }
 
-    @media (max-width: 1024px) {
-      margin-left: 15px;
+    @media screen and (max-width: 1024px) {
     }
 
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       width: 35px;
       margin-left: 5px;
     }
   }
 
-  @media (max-width: 1366px) {
+  @media screen and (max-width: 1366px) {
     margin: 0 auto;
     font-size: 0.9em;
     overflow: hidden;
   }
 
-  @media (max-width: 1333px) {
+  @media screen and (max-width: 1333px) {
     width: 95%;
   }
 
-  @media (max-width: 1255px) {
+  @media screen and (max-width: 1255px) {
     width: 95%;
     justify-content: space-around;
   }
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
+    max-width: 1014px;
+  }
+
+  @media screen and (max-width: 1031px) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
     justify-content: space-around;
     font-size: 0.8em;
-    width: 70%;
   }
-  @media (max-width: 850px) {
+
+  @media screen and (max-width: 960px) {
+    max-width: 640px;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  @media screen and (max-width: 850px) {
     width: 90%;
   }
 
-  @media (max-width: 720px) {
+  @media screen and (max-width: 720px) {
     width: 95%;
   }
 
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     justify-content: space-around;
     padding: 10px 0;
+    max-width: 480px;
+    width: 100%;
   }
 
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     justify-content: start;
     width: 320px;
   }

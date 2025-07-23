@@ -1,46 +1,45 @@
 .buyout {
-    &__list-cont {
-        background-color: #f6d700;
+  &__list-cont {
+    background-color: #f6d700;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+      gap: 30px;
     }
 
-    &__list {
-        display: flex;
-justify-content: center;    
-gap: 140px;    
-padding-top: 30px;
-padding-bottom: 30px;
-
-@media (max-width: 960px) {
-    flex-direction: column;
-    gap: 30px;
-}
-
- @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
       max-width: 600px;
       width: 100%;
     }
-    }
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
 
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    margin-top: 18px;
+    font-weight: 500;
+    color: #000000;
 
-    &__title {
-        font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 25px;
-  margin-top: 18px;
-  font-weight: 500;
-  color: #000000;
-
-   @media (max-width: 640px) {
-     font-weight: 400;
+    @media screen and (max-width: 640px) {
+      font-weight: 400;
     }
-    }
+  }
 }
