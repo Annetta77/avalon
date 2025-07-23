@@ -546,9 +546,9 @@ input.touched:invalid {
     margin-left: 0;
   }
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1031px) {
   .header__logo-cont {
-    margin-right: 20px;
+    margin: 0;
   }
 }
 @media (max-width: 640px) {
@@ -570,6 +570,11 @@ input.touched:invalid {
   width: 56px;
   max-width: none;
 }
+@media screen and (max-width: 960px) {
+  .header__logo-cont img {
+    width: 40px;
+  }
+}
 @media (max-width: 640px) {
   .header__logo-cont img {
     width: 40px;
@@ -587,6 +592,12 @@ input.touched:invalid {
   .header__text-logo-link {
     font-size: 20px;
     line-height: 27px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__text-logo-link {
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 @media (max-width: 640px) {
@@ -633,7 +644,6 @@ input.touched:invalid {
 @media (max-width: 1024px) {
   .header__btn {
     width: 170px;
-    margin-left: 20px;
     font-size: 1.2em;
   }
 }
@@ -660,11 +670,6 @@ input.touched:invalid {
     margin-left: 5px;
   }
 }
-@media (max-width: 1024px) {
-  .header__burger-btn {
-    margin-left: 15px;
-  }
-}
 @media (max-width: 480px) {
   .header__burger-btn {
     width: 35px;
@@ -689,11 +694,28 @@ input.touched:invalid {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 1199px) {
+  .header {
+    max-width: 1014px;
+  }
+}
+@media screen and (max-width: 1031px) {
+  .header {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .header {
     justify-content: space-around;
     font-size: 0.8em;
-    width: 70%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header {
+    max-width: 640px;
+    width: 100%;
+    padding: 5px 0;
   }
 }
 @media (max-width: 850px) {
@@ -710,6 +732,8 @@ input.touched:invalid {
   .header {
     justify-content: space-around;
     padding: 10px 0;
+    max-width: 480px;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -764,7 +788,7 @@ input.touched:invalid {
     line-height: 28px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .contacts__link {
     display: none;
   }
@@ -777,8 +801,13 @@ input.touched:invalid {
 }
 @media (max-width: 1024px) {
   .contacts {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .contacts {
     gap: 15px;
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 @media (max-width: 640px) {
@@ -853,6 +882,9 @@ input.touched:invalid {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
+}
+.main-header__containter {
+  margin: 0 auto;
 }
 .main-header__cont {
   width: 85%;
@@ -1510,7 +1542,6 @@ input.touched:invalid {
 @media (max-width: 850px) {
   .description__text:nth-of-type(1) {
     left: 5%;
-    top: 70px;
   }
 }
 @media (max-width: 720px) {
@@ -1524,7 +1555,6 @@ input.touched:invalid {
     letter-spacing: -1px;
     width: 461px;
     line-height: 1.5em;
-    top: 40px;
   }
 }
 @media (max-width: 480px) {
@@ -1666,9 +1696,6 @@ input.touched:invalid {
     font-size: 46px;
   }
 }
-.description__list {
-  transform: scale(0.9);
-}
 @media (max-width: 1024px) {
   .description__list {
     position: relative;
@@ -1771,6 +1798,11 @@ input.touched:invalid {
 @media (max-width: 640px) {
   .description {
     height: 1300px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .description {
+    transform: scale(0.8);
   }
 }
 
@@ -2284,6 +2316,27 @@ input.touched:invalid {
   .strengths {
     display: flex;
     padding-right: 0;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 1265px) {
+  .strengths {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 1180px) {
+  .strengths {
+    left: -50px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .strengths {
+    left: -80px;
+  }
+}
+@media screen and (max-width: 1085px) {
+  .strengths {
+    left: -100px;
   }
 }
 @media (max-width: 1024px) {
@@ -2291,7 +2344,7 @@ input.touched:invalid {
     width: 100%;
     transform: scale(0.7);
     left: -50px;
-    height: 1480px;
+    height: 1600px;
     padding-top: 0;
   }
 }
@@ -2315,6 +2368,7 @@ input.touched:invalid {
 @media (max-width: 480px) {
   .strengths {
     width: 100vw;
+    padding-left: 50px;
   }
 }
 
