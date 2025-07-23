@@ -1951,6 +1951,11 @@ input.touched:invalid {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .advantages {
+    height: 540px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .advantages {
     padding-bottom: 40px;
@@ -2418,6 +2423,11 @@ input.touched:invalid {
 @media screen and (max-width: 960px) {
   .request .form-cont {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .request .form-cont {
+    justify-content: center;
   }
 }
 .request__request-form {
@@ -4076,7 +4086,8 @@ input.touched:invalid {
   margin-bottom: 30px;
 }
 .supply-footer .supply-request {
-  width: 1412px;
+  max-width: 1412px;
+  width: 100%;
   height: 605px;
   background-image: url("../images/Container_transporta.jpg.webp");
   margin: 0 auto;
@@ -4096,11 +4107,6 @@ input.touched:invalid {
 @media screen and (max-width: 960px) {
   .supply-footer .supply-request {
     border-radius: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .supply-footer .supply-request {
-    width: 90%;
   }
 }
 @media screen and (max-width: 480px) {
