@@ -13,10 +13,17 @@
     font-size: 20px;
     font-weight: 500;
     text-transform: none;
-    column-gap: 80px;
+    column-gap: 95px;
     justify-content: center;
+    align-items: center;
+
     @media screen and (max-width: 1024px) {
       font-size: 18px;
+    }
+
+    @media screen and (max-width: 640px) {
+      flex-wrap: wrap;
+      row-gap: 15px;
     }
 
     @media screen and (max-width: 480px) {
@@ -30,9 +37,32 @@
     display: flex;
     width: 10%;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 640px) {
+      width: 25%;
+    }
     @media screen and (max-width: 480px) {
       width: 25%;
       font-size: 12px;
+    }
+  }
+
+  &__link {
+    color: rgb(38, 38, 43);
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    opacity: 0.8;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 12px;
+      line-height: 19px;
     }
   }
 }

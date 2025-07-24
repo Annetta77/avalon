@@ -133,7 +133,7 @@
 
     @media screen and (max-width: 480px) {
       width: 302px;
-      top: 1px;
+      top: -180px;
       left: 5%;
     }
   }
@@ -234,7 +234,7 @@
       line-height: 1.2em;
     }
     @media screen and (max-width: 480px) {
-      font-size: 18px;
+      font-size: 24px;
     }
   }
 
@@ -253,6 +253,10 @@
 
     @media screen and (max-width: 640px) {
       font-size: 46px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 56px;
     }
   }
 
@@ -274,8 +278,8 @@
 
     @media screen and (max-width: 480px) {
       transform: scale(0.55);
-      left: 170px;
-      top: 120px;
+      left: 190px;
+      top: -55px;
     }
   }
 
@@ -297,7 +301,7 @@
     z-index: 20;
     top: 197px;
     left: calc(50% - 600px + 22px);
-    width: 200px;
+    width: 215px;
     height: auto;
   }
 
@@ -315,6 +319,7 @@
     @media screen and (max-width: 480px) {
       top: 150px;
       left: calc(75% - 600px + 320px);
+      width: 230px;
     }
   }
 
@@ -323,7 +328,7 @@
     z-index: 12;
     top: 446px;
     left: calc(50% - 600px + 120px);
-    width: 100px;
+    width: 130px;
     height: auto;
   }
 
@@ -351,7 +356,7 @@
   }
 
   @media screen and (max-width: 640px) {
-    height: 1300px;
+    height: 1200px;
   }
 
   @media screen and (max-width: 1200px) {

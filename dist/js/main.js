@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const modalWin = document.querySelector('.page__modal');
 const btnOpenModal = document.querySelectorAll('.modal-btn');
+
+const crossCloseModal = document.querySelectorAll('.closeModal');
+
 let scrollPosition = 0;
 let scrollbarWidth = 0;
 let isModalOpen = false;
@@ -95,6 +98,10 @@ function closeModal() {
 
 btnOpenModal.forEach((btn) => {
   btn.addEventListener('click', toggleModal);
+});
+
+crossCloseModal.forEach((crossBtn) => {
+  crossBtn.addEventListener('click', closeModal);
 });
 
 modalWin.addEventListener('click', (e) => e.target === e.currentTarget && closeModal());

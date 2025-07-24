@@ -135,7 +135,8 @@ html {
   }
 
   @media (max-width: 480px) {
-    transform: scale(0.35);
+    transform: scale(0.38);
+    top: 50px;
   }
 }
 
@@ -400,4 +401,34 @@ input.touched:invalid {
   @media (max-width: 480px) {
     width: 100%;
   }
+}
+
+.iti__country-name {
+  font-family: sans-serif;
+  color: #000000;
+  font-size: 14px;
+}
+
+.iti__dial-code {
+  color: #000000 !important;
+  margin-left: auto;
+  margin-right: 8px;
+  font-weight: 400;
+}
+
+.iti__country-list {
+  width: 410px;
+
+  @media screen and (max-width: 650px) {
+    max-width: 410px;
+    width: 60vw;
+  }
+}
+
+.iti__flag-box {
+  order: 5;
+}
+
+.iti__country {
+  justify-content: space-between;
 }
